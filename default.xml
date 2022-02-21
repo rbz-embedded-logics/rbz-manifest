@@ -16,7 +16,7 @@
   <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
   <remote name="rbz" fetch="https://github.com/rbz-embedded-logics"/>
 
-  <project name="meta-rbz.git" path="sources/meta-rbz" remote="rbz" revision="b249c8d613416412def2e5ef8cb3dbcc2d6daccb">
+  <project name="meta-rbz.git" path="sources/meta-rbz" remote="rbz" revision="177c2e9b7b40e05c588e95348e4ba97960b48288">
     <copyfile src="sdk/rbz-setup-release.sh" dest="rbz-setup-release.sh"/>
   </project>
   <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="5a551f453260bd19895e4d847877874eaa51fde3" upstream="hardknott">
