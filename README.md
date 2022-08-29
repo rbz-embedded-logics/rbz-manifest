@@ -4,7 +4,7 @@
 For download software sources:
 
 ```
-repo init -u https://github.com/rbz-embedded-logics/rbz-manifest.git -b main
+repo init -u https://github.com/rbz-embedded-logics/rbz-manifest.git -b kirkstone
 repo sync
 ```
 # Configure machine ⚙️
