@@ -37,7 +37,7 @@
   </project>
   <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="ec9d5592dc6369622dc027ad456cadb844451226" upstream="mickledore-6.1.22-2.0.0"/>
   
-  <project name="meta-rbz" path="sources/meta-rbz" remote="rbz" revision="f67de7c1b09b81adace7c0efdd5c4eebf67e28bb" upstream="mickledore-6.1.22-2.0.0">
+  <project name="meta-rbz" path="sources/meta-rbz" remote="rbz" revision="66ef536756fc500c1177073bb80d79499e89860a" upstream="mickledore-6.1.22-2.0.0">
     <linkfile src="sdk/rbz-setup-release.sh" dest="rbz-setup-release.sh"/>
   </project>
 
