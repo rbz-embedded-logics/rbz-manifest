@@ -14,7 +14,7 @@
   <remote fetch="https://github.com/nxp-imx-support" name="imx-support"/>
   <remote fetch="https://github.com/rbz-embedded-logics" name="rbz"/>
 
-  <project name="meta-rbz.git" path="sources/meta-rbz" remote="rbz" revision="171f7e9141eb3843fd50d6b1ca0909f46293bb64" upstream="kirkstone">
+  <project name="meta-rbz.git" path="sources/meta-rbz" remote="rbz" revision="46a6406d3c9e79df1ee037a106d26ee025de3fd0" upstream="kirkstone">
     <copyfile src="sdk/rbz-setup-release.sh" dest="rbz-setup-release.sh"/>
   </project>
   <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="60f79f7af60537146298560079ae603260f0bd14" upstream="kirkstone">
