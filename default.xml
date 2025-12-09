@@ -3,13 +3,13 @@
 
   <default sync-j="2"/>
 
-  <remote name="CAF" fetch="https://source.codeaurora.org/external/imx"/>
+  <remote name="nxp-imx" fetch="https://github.com/nxp-imx"/>
   <remote name="OSSystems" fetch="https://github.com/OSSystems"/>
   <remote name="QT5" fetch="https://github.com/meta-qt5"/>
   <remote name="Timesys" fetch="https://github.com/TimesysGit"/>
   <remote name="clang" fetch="https://github.com/kraj"/>
   <remote name="community" fetch="https://github.com/Freescale"/>
-  <remote name="imx-support" fetch="https://source.codeaurora.org/external/imxsupport"/>
+  <remote name="imx-support" fetch="https://github.com/nxp-imx-support"/>
   <remote name="oe" fetch="https://github.com/openembedded"/>
   <remote name="python2" fetch="https://git.openembedded.org"/>
   <remote name="rust" fetch="https://github.com/meta-rust"/>
@@ -20,6 +20,7 @@
     <copyfile src="sdk/rbz-setup-release.sh" dest="rbz-setup-release.sh"/>
   </project>
   <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="5a551f453260bd19895e4d847877874eaa51fde3" upstream="hardknott">
+    <linkfile dest="README" src="README"/>
     <linkfile dest="setup-environment" src="setup-environment"/>
   </project>
   <project name="meta-browser" path="sources/meta-browser" remote="OSSystems" revision="8be1d3a0ba0cf32e61144900597207af5698c10d"/>
@@ -28,9 +29,11 @@
   <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="f8150f3b37cb83cba1f9e2378e57bb63e02d4610" upstream="hardknott"/>
   <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="community" revision="e6daa26ba1f748326546063d63a085ae671827d9" upstream="hardknott"/>
 
-  <project name="meta-imx" path="sources/meta-imx" remote="CAF" revision="refs/tags/rel_imx_5.10.72_2.2.0" upstream="hardknott-5.10.72-2.2.0">
+  <project name="meta-imx" path="sources/meta-imx" remote="nxp-imx" revision="refs/tags/rel_imx_5.10.72_2.2.0" upstream="hardknott-5.10.72-2.2.0">
+    <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
+    <linkfile src="README" dest="README-IMXBSP"/>
   </project>
-  <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="9dcc11ea9f525cffedbb28895e0abb443e56c3e0" upstream="imx_5.10.y"/>
+  <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="f540304fda6242be240792095ec4a67bfbb9425f" upstream="hardknott-5.10.72-2.2.0"/>
 
   <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="f44e1a2b575826e88b8cb2725e54a7c5d29cf94a" upstream="hardknott"/>
   <project name="meta-python2" path="sources/meta-python2" remote="python2" revision="8db9e4f6ceae33d7a4f55453d31e69f9858af4eb" upstream="hardknott"/>
