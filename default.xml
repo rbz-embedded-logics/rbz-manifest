@@ -11,7 +11,7 @@
   <remote fetch="https://github.com/Freescale" name="community"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
-  <remote fetch="https://github.com/nxp-real-time-edge-sw" name="imx-support"/>
+  <remote fetch="https://github.com/nxp-imx-support" name="imx-support"/>
   <remote fetch="https://github.com/rbz-embedded-logics" name="rbz"/>
 
   <project name="meta-rbz.git" path="sources/meta-rbz" remote="rbz" revision="20d4cc928ac51133632a84b592d222829452036f" upstream="kirkstone">
